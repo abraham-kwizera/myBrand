@@ -2,6 +2,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 
@@ -11,7 +12,7 @@
     --color-white: #FFFFFF;
     --color-blue: #2191FC;
     --color-black: #000000;
-    --color-text: color: rgba(0, 0, 0, 0.59);
+    --color-text: rgba(0, 0, 0, 0.59);
 }
 
 .container {}
@@ -50,13 +51,9 @@ nav ul li a {
 }
 
 a:hover,
-a.active {
+a:active {
     text-decoration: underline;
     transition: 0.6s;
-}
-
-.active {
-    text-transform: uppercase;
     color: var(--color-blue);
 }
 
@@ -65,7 +62,7 @@ a.active {
     color: var(--color-black);
     float: right;
     cursor: pointer;
-    margin-right: 40px;
+    margin-right: 20px;
     line-height: 80px;
     display: none;
 }
@@ -102,7 +99,7 @@ a.active {
         font-size: 20px;
     }
     a:hover,
-    a.active {
+    a:active {
         color: var(--color-blue);
     }
     #check:checked~ul {
@@ -111,4 +108,93 @@ a.active {
     .mobile {
         display: block
     }
+}
+
+.hero {
+    /* background-color: var(--color-black); */
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.discription {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 0;
+    padding: 50px;
+}
+
+.salutation {
+    font-size: 30px;
+    line-height: 43px;
+    /* or 141.9% */
+    letter-spacing: 0.115em;
+    color: var(--color-text);
+}
+
+.purpose {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 65px;
+    letter-spacing: 0.095em;
+    color: var(--color-black);
+}
+
+.bio {
+    font-size: 34px;
+    line-height: 44px;
+    color: var(--color-text);
+}
+
+.uivector {
+    width: 370px;
+    height: 50px;
+    left: 376px;
+    /* top: 527px; */
+    margin-top: -7px;
+    /* border: 10px solid var(--color-blue);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+}
+
+.profile {
+    /* display: flex;
+    flex-direction: row; */
+    /* object-fit: inherit; */
+    /* float: right; */
+}
+
+.profile-picture {}
+
+.profile-overlay {
+    position: absolute;
+    width: 286px;
+    height: 286px;
+    left: 980px;
+    /* right: 300px; */
+    top: 180px;
+    background: var(--color-white);
+    border: 10px solid var(--color-blue);
+}
+
+.profile::before {
+    z-index: 0;
+}
+
+.profile::after {
+    content: '';
+    position: fixed;
+    position: absolute;
+    width: 286px;
+    height: 286px;
+    left: 950px;
+    /* right: 300px; */
+    top: 165px;
+    background: var(--color-white);
+    border: 10px solid var(--color-blue);
+    z-index: -1;
 }
