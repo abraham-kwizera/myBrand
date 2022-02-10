@@ -254,7 +254,7 @@ a:active {
 .aboutDisc {
     margin: 50px;
     /* padding-top: 50px; */
-    font-size: 24px;
+    font-size: 20px;
     line-height: 31px;
     color: var(--color-text-gray);
 }
@@ -282,7 +282,7 @@ a:active {
 .card .head {
     margin: 20px;
     font-weight: bold;
-    font-size: 53px;
+    font-size: 40px;
     line-height: 69px;
     text-align: center;
     color: var(--color-blue);
@@ -290,8 +290,8 @@ a:active {
 
 .title {
     font-weight: bold;
-    font-size: 33px;
-    line-height: 69px;
+    font-size: 25px;
+    line-height: 45px;
     color: var(--color-black);
 }
 
