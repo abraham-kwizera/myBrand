@@ -407,13 +407,13 @@ img {
     font-weight: bold;
     font-size: 66px;
     line-height: 85px;
-    color: var(--color-black));
+    color: var(--color-black);
 }
 
 .testimonials-picture {
     position: relative;
     border-radius: 100%;
-    border: 5px solid #fff;
+    border: 5px solid var(--color-white);
     top: -80px;
 }
 
