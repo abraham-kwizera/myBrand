@@ -738,7 +738,17 @@ input:focus {
 
 .form-footer a {
     text-decoration: none;
+    color: var(--color-black)
     /* color: inherit; */
+}
+
+.register-field input[type="text"] {
+    position: relative;
+    width: 220px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 0;
+    margin: 10px;
 }
 
 
