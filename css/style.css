@@ -506,6 +506,8 @@ img {
 }
 
 .form input[type="text"],
+input[type="password"],
+input[type="email"],
 select {
     width: 400px;
     height: 40px;
@@ -710,7 +712,9 @@ input:focus {
     align-items: center;
 }
 
-.form-login input[type="text"] {
+.form-login input[type="text"],
+input[type="password"],
+input[type="email"] {
     width: 300px;
     border: 0;
     margin-bottom: 20px;
@@ -742,7 +746,9 @@ input:focus {
     /* color: inherit; */
 }
 
-.register-field input[type="text"] {
+.register-field input[type="text"],
+input[type="password"],
+input[type="email"] {
     position: relative;
     width: 220px;
     height: 40px;
