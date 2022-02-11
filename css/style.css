@@ -534,7 +534,7 @@ select {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    /* position: absolute; */
     width: 150px;
     height: 50px;
     background: var(--color-blue);
@@ -689,6 +689,59 @@ input:focus {
     margin-let: 0;
     background-color: var(--color-green);
 }
+
+
+/* Admin */
+
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-login {
+    background: rgba(215, 215, 215, 0.4);
+    border-radius: 10px;
+    width: 500px;
+    flex-direction: column;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-login input[type="text"] {
+    width: 300px;
+    border: 0;
+    margin-bottom: 20px;
+}
+
+.form-login input[type="submit"] {
+    position: relative;
+    width: 120px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 0;
+}
+
+.form-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-footer .margin {
+    margin-right: 20px;
+    text-align: center
+}
+
+.form-login a {
+    text-decoration: none;
+}
+
+
+/* end of admin */
 
 
 /* footer */
