@@ -596,15 +596,55 @@ input:focus {
     margin-right: 200px;
 }
 
+.blog-post {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .latest-post {
-    position: absolute;
-    width: 950px;
-    height: 1460.82px;
-    left: 194px;
-    top: 372.18px;
-    background: #FFFFFF;
+    margin-top: 20px;
+    width: 600px;
+    height: auto;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
 }
+
+.blog-title {
+    justify-content: center;
+}
+
+.blog-discription {
+    font-weight: normal;
+    font-size: 16px;
+    /* line-height: 25px; */
+    color: #696969;
+}
+
+.blog-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 30px;
+    background: var(--color-blue);
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 64.5px;
+    color: var(--color-white);
+    margin: 20px;
+}
+
+
+/* ancient news */
+
+.blog-ancient {}
 
 
 /* footer */
