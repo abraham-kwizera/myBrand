@@ -736,8 +736,9 @@ input:focus {
     text-align: center
 }
 
-.form-login a {
+.form-footer a {
     text-decoration: none;
+    /* color: inherit; */
 }
 
 
