@@ -6,30 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Login - My Brand</title>
 </head>
 
 <body>
 
-    <!-- Navigtion bar -->
-    <nav>
-        <label class="logo"> <img src="./images/AK-Logo.png" alt=""> </label>
-        <input type="checkbox" id="check">
-        <label for="check" class="mobile"><i class="fa fa-bars"></i></label>
-        <ul>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="blog.html">Blog <img src="./images/ArrowBlog.png" alt="blog"> </a>
-            </li>
-            <li>
-                <a href="login.html">Login </a>
-            </li>
-        </ul>
+    <!-- Navigation bar -->
 
-    </nav>
+    <header>
+        <div id="logo">
+            <a href="/"><img src="./images/AK-Logo.png" alt="Logo"></a>
+        </div>
+
+        <nav>
+            <!-- <label class="logo"> <img src="./images/AK-Logo.png" alt=""> </label> -->
+            <!-- <input type="checkbox" id="check"> -->
+            <!-- <label for="check" class="mobile"><i class="fa fa-bars"></i></label> -->
+
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog <img src="./images/ArrowBlog.png" alt="blog"> </a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </header>
+
 
     <!-- end of navigation bar -->
     <!-- title -->
@@ -42,11 +60,11 @@
             <input type="text" name="" id="" placeholder="Email or Username" required>
             <input type="text" name="" id="" placeholder="Password" required>
             <div class="form-footer">
-                <input type="submit" value="Login" class="margin">
+                <input type="submit" value="Login" class="margin-loginbtn">
                 <p> <a href="restore.html">Forgot Password?</a> </p>
             </div>
             <div class="form-footer">
-                <p class="margin"><b> <a href="register.html">Register</a></b> </p>
+                <p class="margin-login"><b> <a href="register.html">Register</a></b> </p>
                 <p>Or click here to Login with your E-mail</p>
 
             </div>
@@ -61,6 +79,9 @@
         <p> Designed and Built by Abraham Kwizera </p>
     </footer>
     <!-- end of footer -->
+
+    <!-- javascript files -->
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

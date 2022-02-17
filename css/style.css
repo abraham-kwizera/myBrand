@@ -18,12 +18,14 @@
     --color-green: #2D6600;
 }
 
-.container {}
+
+/* .container {} */
 
 
 /* navigation bar */
 
-nav {
+
+/* nav {
     height: 80px;
     width: 100%;
 }
@@ -68,13 +70,14 @@ a:active {
     margin-right: 20px;
     line-height: 80px;
     display: none;
-}
+}*/
 
 #check {
     display: none;
 }
 
-@media (max-width: 793px) {
+
+/* @media (max-width: 793px) {
     nav>label>img {
         padding-left: 50px;
         object-fit: cover;
@@ -110,6 +113,130 @@ a:active {
     }
     .mobile {
         display: block
+    }
+} */
+
+header a {
+    text-decoration: none;
+}
+
+header {
+    padding: 0 20px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+}
+
+ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul a {
+    color: var(--color-black);
+}
+
+ul li {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: var(--color-black);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.open::before {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40px;
+    margin: 0 auto;
+    width: 25%;
+    height: 25%;
+    background: var(--color-blue);
+    transition: 0.4s;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+
+.mobile-menu li {
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    nav ul {
+        display: none;
+    }
+    #hamburger-icon {
+        display: block;
+        color: var(--color-white)
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .form-login {
+        width: 350px;
     }
 }
 
@@ -164,14 +291,19 @@ a:active {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 
-.profile {
+
+/* .profile {
     /* display: flex;
     flex-direction: row; */
-    /* object-fit: inherit; */
-    /* float: right; */
-}
 
-.profile-picture {}
+
+/* object-fit: inherit; */
+
+
+/* float: right; */
+
+
+/* .profile-picture {} */
 
 .profile-overlay {
     position: absolute;
@@ -688,7 +820,7 @@ input:focus {
 
 .subscribe-btn {
     border: 0;
-    margin-let: 0;
+    margin-left: 0;
     background-color: var(--color-green);
 }
 
@@ -714,26 +846,28 @@ input:focus {
 .form-login {
     background: rgba(215, 215, 215, 0.4);
     border-radius: 10px;
-    width: 500px;
+    width: 70%;
     flex-direction: column;
     margin: 30px;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .form-login input[type="text"],
 input[type="password"],
 input[type="email"] {
-    width: 300px;
+    width: 80%;
     border: 0;
     margin-bottom: 20px;
 }
 
 .form-login input[type="submit"] {
     position: relative;
-    width: 120px;
+    width: 20%;
     height: 30px;
-    font-size: 16px;
+    font-size: 90%;
+    /* padding: 10%; */
     line-height: 0;
 }
 
@@ -742,11 +876,20 @@ input[type="email"] {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
 }
 
-.form-footer .margin {
-    margin-right: 20px;
-    text-align: center
+.form-footer .margin-login {
+    /* justify-content: space-between;
+    text-align: center; */
+    margin-right: 5%;
+}
+
+.form-footer .margin-loginbtn {
+    /* justify-content: space-between;
+    text-align: center; */
+    margin-right: 10%;
 }
 
 .form-footer a {
