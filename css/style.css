@@ -226,6 +226,9 @@ a:active {
             width: 80% !important;
             flex-direction: row-reverse!important;
         }
+        .social-links img {
+            padding: 0 10% 0 0 !important;
+        }
         .social-line {
             /* height: 100% !important; */
             display: none !important;
@@ -601,7 +604,7 @@ a:active {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        width: 100% !important;
     }
     
     .contacts-top {
@@ -961,6 +964,7 @@ a:active {
     footer {
         text-align: center;
         width: 100%;
+        margin-top: 2%;
         margin-bottom: 5%;
     }
     
