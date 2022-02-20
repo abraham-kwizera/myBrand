@@ -6,44 +6,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>My brand</title>
 
 </head>
 
 <body>
     <!-- Navigtion bar -->
-    <nav>
-        <label class="logo"> <img src="./images/AK-Logo.png" alt="Logo"> </label>
-        <input type="checkbox" id="check">
-        <label for="check" class="mobile"><i class="fa fa-bars"></i></label>
-        <ul>
-            <li>
-                <a href="index.html">Home</a>
+    <header>
+        <div id="logo">
+            <a href="/"><img src="./images/AK-Logo.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
 
-            </li>
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#testimonials">Testimonials</a>
-            </li>
-            <li>
-                <a href="#contacts">Contacts</a>
-            </li>
-            <li>
-                <a href="blog.html">Blog <img src="./images/ArrowBlog.png" alt="blog"> </a>
-            </li>
-            <li>
-                <a href="login.html">Login </a>
-            </li>
-        </ul>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#testimonials">Testimonials</a>
+                </li>
+                <li>
+                    <a href="#contacts">Contacts</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog <img src="./images/ArrowBlog.png" alt="blog"> </a>
+                </li>
+                <li>
+                    <a href="login.html">Login </a>
+                </li>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li>
+                    <a href="index.html">Home</a>
 
-    </nav>
-
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#testimonials">Testimonials</a>
+                </li>
+                <li>
+                    <a href="#contacts">Contacts</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog <img src="./images/ArrowBlog.png" alt="blog"> </a>
+                </li>
+                <li>
+                    <a href="login.html">Login </a>
+                </li>
+            </ul>
+        </div>
+    </header>
     <!-- end of navigation bar -->
     <!-- Hero section -->
     <section id="home" class="hero">
@@ -468,8 +496,8 @@
                          </select>
                         <!-- end of choose country -->
                         <p>Message</p>
-                        <textarea name="comment" form="">Ready to hear something from you...</textarea>
-                        </br>
+                        <textarea name="comment" form="" cols="30" placeholder="Ready to hear something from you..."></textarea>
+                        <br>
                         <input type="submit" value="Send">
                     </form>
                 </div>
@@ -484,6 +512,8 @@
         <p> Designed and Built by Abraham Kwizera </p>
     </footer>
     <!-- end of footer -->
+    <!-- javascript files -->
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
