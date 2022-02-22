@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="/css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase.js"></script>
     <title>Register - My Brand</title>
 </head>
 
@@ -56,41 +57,46 @@
     <div class="admin-container">
         <!-- <div class="login"> -->
         <!-- <div class="form form-login"> -->
-        <form action="" class="form form-login">
+        <div class="form form-login">
             <div class="form-footer register-field">
-                <input type="text" name="" id="" placeholder="First Name" required>
-                <input type="text" name="" id="" placeholder="Last Name" required>
+                <input type="text" name="" id="firstName" placeholder="First Name">
+                <input type="text" name="" id="lastName" placeholder="Last Name">
 
             </div>
             <div class="form-footer register-field">
-                <input type="text" name="" id="" placeholder="UserName" required>
-                <input type="email" name="" id="" placeholder="Email" required>
+                <input type="text" name="" id="userName" placeholder="UserName">
+                <input type="email" name="" id="email" placeholder="Email">
 
             </div>
             <div class="form-footer register-field">
-                <input type="password" name="" id="" placeholder="Password" required>
-                <input type="password" name="" id="" placeholder="Confirm Password" required>
+                <input type="password" name="" id="password" placeholder="Password">
+                <input type="password" name="" id="confirmPassword" placeholder="Confirm Password">
             </div>
             <div class="form-footer">
-                <input type="submit" value="Register">
+                <input type="submit" value="Register" onclick="register()">
             </div>
             <div class="form-footer">
                 <p>If you already have an account </p>
                 <p> &nbsp;<b> <a href="login.html">SignIn</a></b> </p>
             </div>
-        </form>
-        <!-- </div> -->
-        <!-- </div> -->
-    </div>
+            </>
+            <!-- </div> -->
+            <!-- </div> -->
+        </div>
 
 
-    <!-- footer -->
-    <footer>
-        <p> Designed and Built by Abraham Kwizera </p>
-    </footer>
-    <!-- end of footer -->
-    <!-- javascript files -->
-    <script src="./js/index.js"></script>
+        <!-- footer -->
+        <footer>
+            <p> Designed and Built by Abraham Kwizera </p>
+        </footer>
+        <!-- end of footer -->
+        <!-- javascript files -->
+
 </body>
+<script src="/js/index.js"></script>
+<!-- firebase connection -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
 
 </html>

@@ -907,7 +907,7 @@ a:active {
     .form-login input[type="text"],
     input[type="password"],
     input[type="email"] {
-        width: 80%;
+        width: 80% !important;
         border: 0;
         margin-bottom: 20px;
     }
@@ -949,8 +949,8 @@ a:active {
     }
     
     .register-field input[type="text"],
-    input[type="password"],
-    input[type="email"] {
+    .register-field input[type="password"],
+    .register-field input[type="email"] {
         position: relative;
         width: 220px;
         height: 40px;
