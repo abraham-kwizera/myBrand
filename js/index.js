@@ -2,59 +2,6 @@ function toggleMobileMenu(menu) {
     menu.classList.toggle('open');
 }
 
-// function login() {
-
-//     window.location.href = "/admin/index.html"
-// }
-
-// // firebase
-// // Your web app's Firebase configuration
-// // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-// const firebaseConfig = {
-//     apiKey: "AIzaSyAUjGTYBTk3js4Hwp7AFxsyHs_0AqV3jWU",
-//     authDomain: "my-brand-d03cc.firebaseapp.com",
-//     databaseURL: "https://my-brand-d03cc-default-rtdb.firebaseio.com",
-//     projectId: "my-brand-d03cc",
-//     storageBucket: "my-brand-d03cc.appspot.com",
-//     messagingSenderId: "151739858374",
-//     appId: "1:151739858374:web:5e70e989b5b9ff75a6c6c7",
-//     measurementId: "G-MW1QKJNYZ4"
-// };
-
-// // Initialize Firebase
-// firebase.initializeApp(firebaseConfig);
-// // const analytics = getAnalytics(app);
-// // persistance Firebase
-// firebase.auth.Auth.Persistance.LOCAL;
-
-// //login =
-// $("#btn-login").click(function() {
-//     var email = $("#email").val();
-//     var password = $("#password").val();
-
-//     if (email != "" && password != "") {
-//         var result = firebase.auth().signInWithEmailAndPassword(email, password);
-//         result.catch(function(error) {
-//             var errorCode = error.code;
-//             var errorMessage = error.message;
-//             // display mesage in console
-//             console.log(errorCode);
-//             console.log(errorMessage);
-//             // display message in alert window 
-//             window.alert("Message: " + errorMessage);
-
-//             firebase.auth().onAuthStateChanged(function(user) {
-//                 if (user) {
-//                     window.location.href = "/admin/index.html"
-//                 }
-//             })
-//         });
-//     } else {
-//         window.alert("Fill out all field.")
-//     }
-// });
-
-
 // firebase 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -127,13 +74,6 @@ function register() {
     });
 
 }
-
-
-
-
-
-
-
 
 // Validation functions
 // validate email
