@@ -83,11 +83,13 @@ function login() {
 
     // Validate input fields
     if (validate_email(email) == false || validate_password(password) == false) {
-        alert('Email or Password is Outta Line!!');
+        alert('Invalid Email or Password');
         return;
         // Don't continue running the code
     }
 
+    // set Firebase persistence
+    // auth.setPersistance('session').then(() => {
     auth.signInWithEmailAndPassword(email, password)
         .then(function() {
             // Declare user variable
@@ -115,8 +117,11 @@ function login() {
 
             alert(error_message);
         })
-}
+        // });
 
+} // End of user Login session
+
+// Form validation
 // Validation functions
 // validate email
 function validate_email(email) {
@@ -149,3 +154,11 @@ function validate_field(field) {
         return true;
     }
 }
+
+// Logout session 
+var userLogout = document.getElementById('userLogout');
+userLogout.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.localStorage.removeItem('user');
+    window.location.href = '../login.html';
+});
