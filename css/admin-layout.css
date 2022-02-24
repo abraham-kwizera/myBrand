@@ -39,6 +39,11 @@ footer {
     border-radius: 10px 10px 0px 0px;
 }
 
+.header .logo {
+    width: 75%;
+    justify-content: flex-start !important;
+}
+
 .header img {
     border-radius: 50%;
     padding: 2%;
