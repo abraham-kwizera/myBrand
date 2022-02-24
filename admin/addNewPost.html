@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/admin-layout.css">
+    <title>Home - Admin</title>
+</head>
+
+<body>
+    <!-- header section -->
+    <div class="header">
+        <ul>
+            <li>Logged in as: Abraham</li>
+            <li>Role: Admin</li>
+        </ul>
+        <img src="/images/profilePicture.png" alt="profile picture">
+    </div>
+    <!-- main section -->
+    <div class="main">
+        <!-- menu section  -->
+        <div class="menu">
+            <ul>
+                <li><i class="fa-solid fa-bars"></i></li>
+                <li>
+                    <a href="/admin/addNewPost.html"> <button type="submit" id="addNewPostBtn"> Add New Post</button></a>
+                </li>
+                <li> <a href="/admin/"> All Posts</a></li>
+                <!-- <li>Latest comments</li> -->
+                <!-- <li>Categories</li> -->
+                <li>
+                    <a href="/admin/messages.html">Messages</a></li>
+                <li>Subscribers</li>
+                <!-- <li>Tags</li> -->
+                <!-- <li>Analysis</li>
+                <li>Reports</li> -->
+                <li>Settings</li>
+            </ul>
+        </div>
+        <!-- end menu section  -->
+        <!-- main containner that contains changing content -->
+
+        <!-- add new post section -->
+        <div id="addNewPost" class="addNewPost">
+            <div class="form">
+                <form action="" method="get">
+                    <p>Blog Title</p>
+                    <input type="text" name="" id="" placeholder="Enter Blog Title" required>
+
+                    <input type="file">
+                    <!-- end of choose country -->
+                    <p>Blog Post</p>
+                    <textarea name="comment" form="" cols="30" placeholder="Ready to hear something from you..."></textarea>
+                </form>
+            </div>
+            <div class="btns">
+                <div class="form">
+                    <input type="submit" value="Publish">
+                </div>
+                <div class="form reset">
+                    <input type="submit" value="Reset">
+                </div>
+            </div>
+        </div>
+        <!-- end of add new post section -->
+    </div>
+    <!-- end main section -->
+
+    <footer>
+        <p>Designed and Built by Abraham Kwizera</p>
+    </footer>
+</body>
+
+</html>
