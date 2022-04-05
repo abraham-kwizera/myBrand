@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="/css/admin-layout.css">
+    <title>Messages - Admin</title>
+</head>
+
+<body>
+    <!-- header section -->
+    <div class="header">
+        <div id="logo" class="logo">
+            <a href="./"><img src="../images/AK-Logo.png" alt="Logo"></a>
+        </div>
+        <ul>
+            <li>Logged in as: Abraham</li>
+            <li>Role: Admin</li>
+            <li> <button type="submit" id="userLogout">Logout</button></li>
+        </ul>
+        <img src="/images/profilePicture.png" alt="profile picture">
+    </div>
+    <!-- main section -->
+    <div class="main">
+        <!-- menu section  -->
+        <div class="menu">
+            <ul>
+                <li><i class="fa-solid fa-bars"></i></li>
+                <li>
+                    <a href="/admin/addNewPost.html"> <button type="submit" id="addNewPostBtn"> Add New Post</button></a>
+                </li>
+                <li> <a href="/admin/"> All Posts</a></li>
+                <!-- <li>Latest comments</li> -->
+                <!-- <li>Categories</li> -->
+                <li>
+                    <a href="/admin/messages.html">Messages</a>
+                </li>
+                <li>
+                    <a href="/admin/allUsers.html">Users</a>
+                </li>
+                <li>
+                    <a href="/admin/allSubscribers.html">Subscribers</a>
+                </li>
+                <!-- <li>Tags</li> -->
+                <!-- <li>Analysis</li>
+                <li>Reports</li> -->
+                <li>Settings</li>
+            </ul>
+        </div>
+        <!-- end menu section  -->
+
+        <!-- display messages Section -->
+        <div class="messages" id="messages">
+            <h1>Inbox Messages</h1>
+            <div class="alert">Message Successfully deleted</div>
+            <div class="alertError">Error in deleting message, Try again...</div>
+            <!-- <div class="message-container">
+                <div class="user-info">
+                    <label for="name">Names: Lorem</label>
+                    <label for="location">From: location</label>
+                    <label for="email">Email: Lorem@gmail </label>
+                </div>
+                <div class="user-message">
+                    <label for="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ratione saepe rem porro tempora, consequuntur eaque voluptates neque, itaque dolores cumque veritatis fugit impedit, temporibus atque non rerum pariatur nostrum!</label>
+                </div>
+                <div class="btns">
+                    <input type="button" value="Delete">
+                </div>
+            </div> -->
+        </div>
+        <!-- end of display messages section -->
+    </div>
+    <!-- end main section -->
+
+    <footer>
+        <p>Designed and Built by Abraham Kwizera</p>
+    </footer>
+    <script src="/js/readMessage.js"></script>
+    <script src="../js/logout.js"></script>
+</body>
+
+</html>
