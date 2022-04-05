@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
     <link type="text/css" rel="stylesheet" href="/css/style.css">
     <title>Blog - My Brand</title>
 </head>
@@ -47,94 +48,40 @@
     <p class="blog-title"><u>BLOG</u></p>
 
     <!-- search -->
-    <div class="search">
+    <!-- <div class="search">
         <form action="get">
             <input type="text" placeholder="Categories" class="category">
             <input type="search" placeholder="Search about any article written" class="search-bar">
         </form>
     </div>
-    </div>
+    </div> -->
     <!-- end of search -->
+
+
+
+
     <!-- BLogs section -->
     <div class="blog-post">
         <!-- Latest blog post -->
-        <div class="latest-post">
-            <img src="./images/unsplash_8yTyCF4epts.png" alt="Blog Wallpaper" />
-            <p class="title blog-title">Lorem Title</p>
-            <p class="blog-discription">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit feugiat morbi platea justo odio egestas et auctor. Pharetra enim blandit feugiat luctus. Mi diam dui tincidunt ullamcorper lectus diam feugiat vitae. Sollicitudin sit eget et nec, sagittis,
-                suscipit eget.
-                <br> <br> Tempor leo amet felis eget enim egestas nulla sit quis. Cras et phasellus sit semper mollis sit sed elit sapien. Purus nulla et pretium in maecenas aliquam tortor purus neque. Cursus quis non laoreet ac in tristique quis. Lorem
-                risus quisque rhoncus in sed ut.
-                <br> <br> Orci ut semper posuere quam. Felis praesent ridiculus adipiscing sit nulla odio. Suspendisse donec pellentesque ultrices sed id nulla tempor. Tristique aliquam consectetur dui egestas quisque elit purus. Blandit cras lacus ac
-                non interdum dui ultricies nunc donec.
-                <br> <br> Feugiat orci, sit eget nibh turpis tempor nunc vitae aliquet. Placerat massa rhoncus vehicula ullamcorper lobortis. Vulputate vitae consequat eros malesuada. Dis odio morbi nec suspendisse. In nibh amet, pellentesque tincidunt.
-                Vivamus phasellus Tristique aliquam consectetur dui egestas quisque elit purus. Blandit cras lacus ac non interdum dui ultricies nunc donec. Feugiat orci, sit eget nibh turpis tempor nunc vitae aliquet. Placerat massa rhoncus vehicula
-                ullamcorper lobortis. Vulputate vitae consequat eros malesuada. Dis odio morbi nec suspendisse. In nibh amet, pellentesque tincidunt. Vivamus phasellus
+        <div class="latest-post" id="latestBlog">
 
-            </p>
-            <!-- like comment and share buttons section  -->
-            <div class="blog-buttons">
-                <!-- like  -->
-                <div class="button">
-                    <p>Like</p> <img src="./images/icons/ant-design_like-outlined.png" alt="">
-                </div>
-
-                <!-- Comment -->
-                <!-- <div class="button">
-                    <p>Comment</p> <img src="./images/icons/fluent_comment-28-regular.png" alt="">
-                </div> -->
-                <!-- Share -->
-                <div class="button">
-                    <p>Share</p> <img src="./images/icons/ant-design_share-alt-outlined.png" alt="">
-                </div>
-            </div>
-            <!-- end of like comment and share buttons section -->
-            <!-- comment section -->
-            <div class="blog-comment form">
-                <h3>Your Comment:</h3>
-                <form action="">
-                    <textarea name="comment" id=""></textarea>
-                    <input type="submit" value="Send"><br>
-                </form>
-            </div>
         </div>
         <!-- END of Latest blog post -->
 
         <!-- Ancient Blog Posts section -->
         <div class="ancient">
-            <div class="blog-ancient">
-                <img src="./images/unsplash_3EkT6xb4K9w.png" alt="Wallpaper" class="right">
-                <div class="left">
-                    <h3>Rwandan Youth</h3>
-                    <p>Author: Name</p>
-                    <p>Date: 03 - Feb - 2022</p>
-                </div>
-            </div>
-            <!-- ancient blog -->
-            <div class="blog-ancient">
-                <img src="./images/unsplash_pJGA1LYp_lc.png" alt="Wallpaper" class="right">
-                <div class="left">
-                    <h3>Kwita Izina</h3>
-                    <p>Author: Name</p>
-                    <p>Date: 05 - Feb - 2022</p>
-                </div>
-            </div>
+            <div id="blog-ancient">
 
-            <!-- ancient blog  -->
-            <div class="blog-ancient">
-                <img src="./images/unsplash_TfCe6TxInCw.png" alt="Wallpaper" class="right">
-                <div class="left">
-                    <h3>Made in Rwanda</h3>
-                    <p>Author: Name</p>
-                    <p>Date: 06 - Feb - 2022</p>
-                </div>
+
+
             </div>
 
             <!-- subscribe with email -->
-            <form class="form subscribe">
-                <input type="email" placeholder="Enter your Email to get latest blog post" class="search-bar">
+            <form class="form subscribe" id="subscribeForm">
+                <input type="email" id="email" placeholder="Enter your Email to get latest blog post" class="search-bar">
                 <input type="submit" value="Subscribe" class="button subscribe-btn">
+                <div class="alertSubscribe">Subscribed Successfully</div>
+                <div class="alertErrorSubscribe">This Email is already used ...</div>
             </form>
 
         </div>
@@ -147,8 +94,13 @@
         <p> Designed and Built by Abraham Kwizera </p>
     </footer>
     <!-- end of footer -->
-    <!-- javascript files -->
-    <script src="./js/index.js"></script>
+
 </body>
+<script src="./js/subscribe.js"></script>
+<script src="./js/blogComment.js"></script>
+<script src="./js/allBlogUser.js"></script>
+<!-- <script src="./js/comment.js"></script> -->
+<!-- javascript files -->
+<script src="./js/index.js"></script>
 
 </html>
