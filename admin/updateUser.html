@@ -15,7 +15,7 @@
     <!-- header section -->
     <div class="header">
         <div id="logo" class="logo">
-            <a href="/admin/"><img src="../images/AK-Logo.png" alt="Logo"></a>
+            <a href="./"><img src="../images/AK-Logo.png" alt="Logo"></a>
         </div>
         <ul>
             <li>Logged in as: Abraham</li>
@@ -23,7 +23,6 @@
             <li> <button type="submit" id="userLogout">Logout</button></li>
         </ul>
         <img src="/images/profilePicture.png" alt="profile picture">
-
     </div>
     <!-- main section -->
     <div class="main">
@@ -53,45 +52,35 @@
         </div>
         <!-- end menu section  -->
         <!-- main containner that contains changing content -->
-        <div class="all-posts">
-            <div class="post">
-                <div class="blogs" id="blogs">
-                    <!-- search -->
-                    <!-- <div class="form">
-                        <label for="">Search Post</label>
-                        <input type="text" name="search" id="" class="search-bar">
-                    </div> -->
-                    <!-- end of search -->
-                    <!--  blog -->
-                    <!-- <div class="blog-ancient">
-                        <div class="left">
-                            <img src="/images/unsplash_pJGA1LYp_lc.png" alt="Wallpaper">
-                        </div>
-                        <div class="right">
-                            <div class="blog-discription">
-                                <h3>Kwita Izina</h3>
-                                <p>Author: Name</p>
-                                <p>Date: 05-Feb-2022</p>
-                            </div>
-                            <div class="btns">
-                                <!-- <input type="button" value="Read"> -->
-                    <!-- <input type="button" value="Update">
-                                <input type="button" value="Delete" class="delete">
 
-                            </div>
-                        </div> -->
-
-                    <!-- </div> -->
-
-
-                </div>
+        <!-- add new post section -->
+        <div id="addNewPost" class="addNewPost">
+            <div class="form">
+                <form id="updateUserForm">
+                    <h3>Update User With ID: <i id="userId" name="userId" class="blogId">  </i></h3>
+                    <p>First Name </p>
+                    <input type="text" name="" id="firstName" placeholder="First Name" required>
+                    <p>Last Name</p>
+                    <input type="text" name="" id="lastName" placeholder="Last Name" required>
+                    <p>User Name</p>
+                    <input type="text" name="" id="userName" placeholder="User Name" required>
+                    <p>User email</p>
+                    <input type="text" name="" id="email" placeholder="User email" required>
+                    <p>User Role</p>
+                    <input type="text" name="" id="role" placeholder="User Role" required>
+                    <!-- <input type="file" id="blogImage" required/> -->
 
             </div>
-            <!-- blog section -->
+            <div class="btns">
+                <div class="form">
+                    <input type="submit" value="Publish">
+                </div>
+                <div class="form reset">
+                    <input type="reset" value="Reset" onclick="resetForm()">
+                </div>
+            </div>
         </div>
-
-
-
+        <!-- end of add new post section -->
     </div>
     <!-- end main section -->
 
@@ -101,15 +90,15 @@
 </body>
 <!-- javascript files -->
 <script src="../js/index.js"></script>
-<script src="../js/allBlogsAdmin.js"></script>
+<script src="../js/updateUser.js"></script>
 <script src="../js/logout.js"></script>
-<!-- <script src="../js/singleBlogAdmin.js"></script> -->
 
 
-<!-- firebase connection
-<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<!-- firebase connection -->
+<!-- <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script> -->
+
 
 </html>
