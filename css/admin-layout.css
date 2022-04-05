@@ -22,6 +22,10 @@ body {
     --color-green: #2D6600;
 }
 
+a {
+    text-decoration: none;
+}
+
 .header,
 footer {
     height: auto;
@@ -154,7 +158,8 @@ i {
     /* margin-right: 200px; */
 }
 
-input:focus {
+input:focus,
+button:focus {
     outline: none;
 }
 
@@ -226,6 +231,11 @@ input:focus {
     border: 1px var(--color-red) solid !important;
 }
 
+.all-posts .blog-ancient .btns .dlt {
+    border: 1px var(--color-red) solid !important;
+    width: 100% !important
+}
+
 .all-posts .blog-ancient .left {
     display: flex;
     flex-direction: column;
@@ -295,7 +305,8 @@ select {
     padding: 10px;
 }
 
-.addNewPost .form input[type="submit"] {
+.addNewPost .form input[type="submit"],
+.form input[type="reset"] {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -308,7 +319,14 @@ select {
     font-weight: bold;
     font-size: 20px;
     line-height: 38px;
+    border-radius: 5px;
     box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.addNewPost .form input[type="submit"]:hover,
+.form input[type="reset"]:hover {
+    color: var(--color-blue);
+    background-color: var(--color-white);
 }
 
 .addNewPost .form .btn {
@@ -332,6 +350,7 @@ select {
 
 .messages {
     display: flex;
+    flex-direction: column;
     /* display: none; */
     width: 90%;
 }
@@ -384,6 +403,24 @@ select {
     line-height: 38px;
     box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 64.5px;
+}
+
+.alert {
+    text-align: center;
+    padding: 10px;
+    background-color: #79c879;
+    color: #fff;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.alertError {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--color-red);
+    color: #fff;
+    margin-bottom: 10px;
+    display: none;
 }
 
 
