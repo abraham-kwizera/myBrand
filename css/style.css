@@ -633,6 +633,7 @@ img {
     align-items: center;
     justify-content: center;
     width: 100% !important;
+    margin: 25% 0 0 0;
 }
 
 .contacts-top {
