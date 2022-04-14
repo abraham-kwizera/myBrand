@@ -282,11 +282,8 @@ header ul li:hover {
 }
 
 .hero {
-    /* background-color: var(--color-black); */
     width: 100%;
     height: auto;
-    /* margin: 5% 0 5% 0; */
-    /* padding-top: 5%; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -332,33 +329,12 @@ header ul li:hover {
     width: 70%;
     height: 25%;
     left: 376px;
-    /* top: 527px; */
-    /* margin-top: ; */
-    /* border: 10px solid var(--color-blue);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
-
-
-/* .profile {
-    /* display: flex;
-    flex-direction: row; */
-
-
-/* object-fit: inherit; */
-
-
-/* float: right; */
-
-
-/* .profile-picture {} */
 
 .profile-overlay {
     position: absolute;
     width: 40%;
     height: 80%;
-    /* left: 980px; */
-    /* right: 300px; */
-    /* top: 180px; */
     background: var(--color-white);
     border: 10px solid var(--color-blue);
 }
@@ -370,13 +346,10 @@ header ul li:hover {
 
 .profile::after {
     content: '';
-    /* position: fixed; */
     position: absolute;
     width: 18%;
-    height: 40%;
-    margin-left: -15%;
-    /* right: 300px; */
-    /* top: ; */
+    height: 43%;
+    margin-left: -17%;
     background: var(--color-white);
     border: 10px solid var(--color-blue);
     z-index: -1;
