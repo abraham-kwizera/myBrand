@@ -238,6 +238,84 @@ header ul li:hover {
 }
 
 .profile-overlay {
+        background: rgba(215, 215, 215, 0.4);
+        border-radius: 10px;
+        width: 70%;
+        flex-direction: column;
+        margin: 30px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .form-login input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+        width: 80% !important;
+        border: 0;
+        margin-bottom: 20px;
+    }
+    
+    .form-login input[type="submit"] {
+        position: relative;
+        width: 20%;
+        height: 30px;
+        font-size: 90%;
+        /* padding: 10%; */
+        line-height: 0;
+    }
+    
+    .form-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    
+    .form-footer .margin-login {
+        /* justify-content: space-between;
+    text-align: center; */
+        margin-right: 5%;
+    }
+    
+    .form-footer .margin-loginbtn {
+        /* justify-content: space-between;
+    text-align: center; */
+        margin-right: 10%;
+    }
+    
+    .form-footer a {
+        text-decoration: none;
+        /* color: var(--color-black) */
+        /* color: inherit; */
+    }
+    
+    .register-field input[type="text"],
+    .register-field input[type="password"],
+    .register-field input[type="email"] {
+        position: relative;
+        width: 220px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 0;
+        margin: 10px;
+    }
+    /* end of admin */
+    /* footer */
+    
+    footer {
+        text-align: center;
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+    
+    footer p:hover {
+        color: var(--color-blue);
+    }
+    /* .hidden {
     position: absolute;
     width: 40%;
     height: 80%;
