@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase.js"></script> -->
     <link type="text/css" rel="stylesheet" href="/css/style.css">
+
     <title>Login - My Brand</title>
 </head>
 
@@ -19,10 +21,6 @@
         </div>
 
         <nav>
-            <!-- <label class="logo"> <img src="./images/AK-Logo.png" alt=""> </label> -->
-            <!-- <input type="checkbox" id="check"> -->
-            <!-- <label for="check" class="mobile"><i class="fa fa-bars"></i></label> -->
-
             <ul>
                 <li>
                     <a href="/">Home</a>
@@ -48,29 +46,28 @@
         </div>
     </header>
 
-
     <!-- end of navigation bar -->
     <!-- title -->
-    <p class="blog-title"><u>ADMIN PORTAL</u></p>
+    <p class="blog-title"><u>LOGIN PORTAL</u></p>
 
     <div class="admin-container">
         <!-- <div class="login"> -->
         <!-- <div class="form form-login"> -->
-        <form action="" class="form form-login">
-            <input type="text" name="" id="" placeholder="Email or Username" required>
-            <input type="text" name="" id="" placeholder="Password" required>
-            <div class="form-footer">
-                <input type="submit" value="Login" class="margin-loginbtn">
-                <p> <a href="restore.html">Forgot Password?</a> </p>
-            </div>
-            <div class="form-footer">
-                <p class="margin-login"><b> <a href="register.html">Register</a></b> </p>
-                <p>Or click here to Login with your E-mail</p>
 
-            </div>
-        </form>
-        <!-- </div> -->
-        <!-- </div> -->
+        <div class="form form-login">
+            <div class="alertError">Register your account first</div>
+            <form id="loginForm">
+                <input type="email" name="" id="email" placeholder="Email or Username" required>
+                <input type="password" name="" id="password" placeholder="Password" required>
+                <div class="form-footer">
+                    <input type="submit" id="btn-login" value="Login" class="margin-loginbtn">
+                    <p> <a href="restore.html">Forgot Password?</a> </p>
+                </div>
+                <div class="form-footer">
+                    <p class="margin-login"><b> <a href="register.html">Register</a></b> </p>
+                    <!-- <p>Or click here to Login with your E-mail</p> -->
+                </div>
+        </div>
     </div>
 
 
@@ -80,8 +77,16 @@
     </footer>
     <!-- end of footer -->
 
-    <!-- javascript files -->
-    <script src="./js/index.js"></script>
 </body>
+<!-- javascript files -->
+<script src="js/index.js"></script>
+<script src="js/login.js"></script>
+
+
+<!-- firebase connection -->
+<!-- <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script> -->
 
 </html>

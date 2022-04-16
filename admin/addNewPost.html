@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="/css/admin-layout.css">
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase.js"></script> -->
+    <title>Home - Admin</title>
+</head>
+
+<body>
+    <!-- header section -->
+    <div class="header">
+        <div id="logo" class="logo">
+            <a href="./"><img src="../images/AK-Logo.png" alt="Logo"></a>
+        </div>
+        <ul>
+            <li>Logged in as: Abraham</li>
+            <li>Role: Admin</li>
+            <li> <button type="submit" id="userLogout">Logout</button></li>
+        </ul>
+        <img src="/images/profilePicture.png" alt="profile picture">
+    </div>
+    <!-- main section -->
+    <div class="main">
+        <!-- menu section  -->
+        <div class="menu">
+            <ul>
+                <li><i class="fa-solid fa-bars"></i></li>
+                <li>
+                    <a href="/admin/addNewPost.html"> <button type="submit" id="addNewPostBtn"> Add New Post</button></a>
+                </li>
+                <li> <a href="/admin/"> All Posts</a></li>
+                <!-- <li>Latest comments</li> -->
+                <!-- <li>Categories</li> -->
+                <li>
+                    <a href="/admin/messages.html">Messages</a></li>
+                <li>
+                    <a href="/admin/allUsers.html">Users</a>
+                </li>
+                <li>Subscribers</li>
+                <!-- <li>Tags</li> -->
+                <!-- <li>Analysis</li>
+                <li>Reports</li> -->
+                <li>Settings</li>
+            </ul>
+        </div>
+        <!-- end menu section  -->
+        <!-- main containner that contains changing content -->
+
+        <!-- add new post section -->
+        <div id="addNewPost" class="addNewPost">
+            <div class="form">
+
+                <form id="newBlog">
+                    <p>Blog Title</p>
+                    <input type="text" name="" id="blogTitle" placeholder="Enter Blog Title" required>
+
+                    <!-- <input type="file" id="blogImage" required/> -->
+                    <!-- end of choose country -->
+                    <p>Blog Post</p>
+                    <textarea name="comment" form="" cols="30" placeholder="Ready to hear something from you..." id="blogBody" required></textarea>
+                    <div class="alert">New Blog created successfully</div>
+                    <div class="alertError">Error occurred while creating blog, Try again... </div>
+            </div>
+            <div class="btns">
+                <div class="form">
+                    <input type="submit" value="Publish">
+                </div>
+                <div class="form reset">
+                    <input type="reset" value="Reset">
+                </div>
+            </div>
+        </div>
+        <!-- end of add new post section -->
+    </div>
+    <!-- end main section -->
+
+    <footer>
+        <p>Designed and Built by Abraham Kwizera</p>
+    </footer>
+</body>
+<!-- javascript files -->
+<script src="../js/addNewPost.js"></script>
+<script src="../js/index.js"></script>
+
+<!-- firebase connection
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script> -->
+
+
+</html>
